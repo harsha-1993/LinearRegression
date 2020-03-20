@@ -45,7 +45,7 @@ def plot_regression_line(x, y, b):
 	plt.show() 
 
 def main():
-    dataset=pd.read_csv('D:/Harsha/ME CSE 2k19/Machine Learning/Assignment/Assignment Solution/Salary_Data.csv')
+    dataset=pd.read_csv('Salary_Data.csv')
     x=dataset.iloc[:,:-1]
     y=dataset.iloc[:,1]
     b=estimate_coef(x,y)
@@ -55,4 +55,5 @@ def main():
 
 if __name__ == "__main__": 
 	main() 
+
 
